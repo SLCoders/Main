@@ -161,12 +161,12 @@ header {
 /*-- banner- --*/
 
 #home {
-    background-image: linear-gradient(to left bottom, #0652dd, #0d58e2, #145de7, #1963eb, #1e68f0);
+    background-image: linear-gradient(to left bottom, #000000, #0F0F0F, #191717, #24201F, #35302F);
     position: relative;
 }
 
 .banner--info p {
-    color: #b1d1f3;
+    color: #FFFFFF;
     text-align: justify;
 }
 
