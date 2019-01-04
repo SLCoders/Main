@@ -2,7 +2,7 @@ html,
 body {
     margin: 0;
     font-size: 100%;
-    background: #fff;
+    background: #ECF0F1;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -72,7 +72,7 @@ header {
     position: fixed;
     width: 100%;
     z-index: 99;
-    background: #105ae4;
+    background: #212F3C;
 }
 
 .navbar-light .navbar-brand,
@@ -135,17 +135,21 @@ header {
 }
 
 .header-right a.signin:hover {
-    color: #fff;
+    color: #d1dff9;
 }
 
 .header-right a.contact {
-    background: #fff;
+    background: #717D7E;
     padding: 11px 30px;
     font-size: 14px;
     letter-spacing: 1px;
-    color: #0c57e1;
+    color: #FFFFFF;
     border-radius: 59px;
     display: inline-block;
+}
+.header-right a.contact:hover{
+	background:#FFF;
+	color: #717D7E;
 }
 
 .navbar {
@@ -161,7 +165,7 @@ header {
 /*-- banner- --*/
 
 #home {
-    background-image: linear-gradient(to left bottom, #000000, #0F0F0F, #191717, #24201F, #35302F);
+    background-image: linear-gradient(to left bottom, #BFC9CA, #AAB7B8, #95A5A6 , #839192, #717D7E);
     position: relative;
 }
 
@@ -184,7 +188,7 @@ header {
     padding: 11px 31px;
     font-size: 14px;
     letter-spacing: 1px;
-    color: #0c57e1;
+    color: #212F3C;
     border-radius: 59px;
     display: inline-block;
     box-shadow: 0 12px 60px rgba(0, 0, 0, .2);
@@ -195,7 +199,7 @@ header {
 }
 
 .banner--info a:hover {
-    background: #0c57e1;
+    background: #212f3c;
     color: #fff;
 }
 
@@ -301,7 +305,7 @@ h3.tittle {
 
 .bottom-gd:hover,
 .bottom-gd2-active {
-    background: #1963eb !important;
+    background: #212F3C !important;
     transition: 2s all;
     -webkit-transition: 2s all;
     -moz-transition: 2s all;
@@ -340,13 +344,13 @@ h3.tittle {
 }
 
 .fea span {
-    color: #1963eb;
+    color: #717D7E;
     font-size: 3em;
 }
 
 .fea:hover span,
 .fea.active span {
-    color: #fff;
+    color: #FFFFFF;
 }
 
 .fea {
@@ -355,10 +359,11 @@ h3.tittle {
 
 .fea h3 {
     font-size: 1.2em;
+	color: #717D7E;
 }
 
 .fea.active {
-    background: #1963eb;
+    background: #717D7E;
 }
 
 .fea.active p,
@@ -513,7 +518,7 @@ ul.team-icons.new-inf li {
 }
 
 section.hand-crafted {
-    background: #262631;
+    background-image: linear-gradient(to left bottom, #BFC9CA, #AAB7B8, #95A5A6 , #839192, #717D7E);
 }
 
 h4.progress-tittle {
@@ -548,13 +553,13 @@ p.sub-test {
 }
 
 p.sub-test i {
-    color: #105ae4;
+    color: #212F3C;
     font-size: 1.7em;
     margin-right: 0.3em;
 }
 
 .testi_grid h5 {
-    color: #1963eb;
+    color: #717D7E;
     letter-spacing: 1px;
     font-size: 1em;
     text-transform: uppercase;
@@ -576,7 +581,7 @@ p.sub-test i {
 }
 
 .carousel-indicators .active {
-    background-color: #0d57e0;
+    background-color: #212F3C;
 }
 
 .carousel-indicators {
@@ -586,7 +591,7 @@ p.sub-test i {
 }
 
 section.hand-crafted p {
-    color: #818192;
+    color: #FFFFFF;
 }
 
 /* //testimonials */
@@ -608,7 +613,7 @@ section.hand-crafted p {
 /*----*/
 
 section.subscribe-main {
-    background-image: linear-gradient(to left bottom, #0652dd, #0d58e2, #145de7, #1963eb, #1e68f0);
+    background-image: linear-gradient(to left bottom, #BFC9CA, #AAB7B8, #95A5A6 , #839192, #717D7E);
 }
 
 /*--/blog--*/
@@ -1197,7 +1202,7 @@ input.checkbox:checked:after {
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     transition: 0.5s all;
-    background-image: linear-gradient(to left bottom, #0652dd, #0d58e2, #145de7, #1963eb, #1e68f0);
+    background-image: linear-gradient(to left bottom, #212f3c, #212f3c, #212f3c , #212f3c, #212f3c);
     font-weight: 600;
     cursor: pointer;
 }

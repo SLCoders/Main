@@ -48,12 +48,12 @@
 }
 
 .nav a:hover {
-  background:#ea1d5d!important;
+  background:#717d7e!important;
   color: #fff;
 }
 
 .nav .active {
-  background: #1963eb !important;
+  background: #212f3c !important;
   border: transparent;
   color: #fff;
 }
