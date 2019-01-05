@@ -209,6 +209,7 @@ section.banner- {
 
 /* image layers effect */
 
+
 .effect-w3 {
     position: relative;
     width: 360px;
@@ -339,7 +340,7 @@ h3.tittle {
 .featured-left {
     position: absolute;
     z-index: 9;
-    right: -4%;
+    right: -10%;
     top: 6%;
 }
 
