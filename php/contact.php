@@ -10,6 +10,10 @@
    
     mail($to,$subject,$message,$contact);
   
-    
+    if($_POST['email']){
+		header('location: thanks.html');
+	}else{
+		header('location: error.html');
+	}
    
 ?>
