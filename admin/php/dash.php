@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	if(!isset($_SESSION["currentUserDetails"])){
+		header("location:index.php");
+	}
+	
+	echo "Welcome " . $_SESSION['currentUserDetails']["username"];
+?>
 <!doctype html>
 <html>
 <head>
@@ -121,6 +129,7 @@
 	  </div>
   </div>
 </div>
+<a href="logout.php">Logout </a>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap-4.0.0.js"></script>
 </body>
