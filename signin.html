@@ -97,38 +97,83 @@
                         <h3>Sign in to your Account</h3>
                         <p class="para-sign mt-2 mb-4 text-center">Enter your details to create account.</p>
 
-                        <form action="#" method="post">
+                        <form action="php/quote.php" method="post">
                        		<div class="form-group">
       						<label for="sel1">Bussiness Type*</label>
       						<select class="form-control" id="sel1" name="buissnesType" required>
-        						<option>Travel</option>
+        						<option>Select</option>
+								<option>Travel</option>
         						<option>Coparate</option>
         						<option>Hotal</option>
-       						 	<option>E-Commers</option>
 								<option>Other</option>
      						 </select>
                           </div>
 							<div class="form-group">
-              				<label>User Email*</label>
+              				<label>Company/Business Name*</label>
                                 <div class="icon1">
-                                    <input placeholder="" name="mail" type="email" required="">
+                                    <input placeholder="" name="busname" type="text" required="">
                                 </div>
                           	</div>
-                            <div class="form-group">
-                                <label>Password*</label>
-                                <div class="icon2">
-                                    <input placeholder="" name="Password" type="password" required="">
+							<div class="form-group">
+              				<label>Number of pages*</label>
+                                <div class="icon1">
+                                    <input placeholder="" name="pagecount" type="text" required="">
                                 </div>
-                            </div>
-                            <label class="anim">
-                                    <input type="checkbox" class="checkbox">
-                                        <span>Remember Me</span> 
-                                        <a href="#">Forgot Password</a>
-						    </label>
-                            <div class="clearfix"></div>
-                            <input type="submit" value="Sign in">
-                            <p class="para-sign mt-3">Don’t know an Account ? <a href="register.html" class="ml-2"><strong>Create your Account</strong></a></p>
+                          	</div>
+							<div class="form-group">
+              				<label>Tell us about your project</label>
+                                <div class="icon1">
+                                    <input placeholder="" name="prodetails" type="text">
+                                </div>
+                          	</div>
+							<div class="form-group">
+              				<label>Any refer website</label>
+                                <div class="icon1">
+                                    <input placeholder="" name="referweb" type="text">
+                                </div>
+                          	</div>
+							<div class="form-group">
+      						<label for="sel1">Currently, do you have a website*</label>
+      						<select class="form-control" id="sel11" name="currentwebstatus" required>
+        						<option>Select</option>
+								<option>Yes</option>
+        						<option>No</option>
+     						 </select>
+                          </div>
+							<div class="form-group">
+              				<label>If yes Domain Name</label>
+                                <div class="icon1">
+                                    <input placeholder="" name="domainstatus" type="text">
+                                </div>
+                          	</div>
+							<div class="form-group">
+              				<label>Contact Name*</label>
+                                <div class="icon1">
+                                    <input placeholder="" name="cname" type="text" required="">
+                                </div>
+                          	</div>
+							<div class="form-group">
+              				<label>Email Address*</label>
+                                <div class="icon1">
+                                    <input placeholder="" name="cmail" type="email" required="">
+                                </div>
+                          	</div>
+							<div class="form-group">
+              				<label>Phone Number*</label>
+                                <div class="icon1">
+                                    <input placeholder="" name="cphone" type="text" required="">
+                                </div>
+                          	</div>
+							<div class="form-group">
+              				<label>Project Details</label>
+                                <div class="icon1">
+                                    <input placeholder="" name="fullprodetails" type="text">
+                                </div>
+							</div>
+                            <input type="submit" value="Send Quote">
+                            
                         </form>
+                       
                     </div>
               </div>
             </div>
