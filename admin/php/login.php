@@ -12,7 +12,7 @@
 			"username"=> $row["username"],
 			"password"=> $row["password"],
 		);
-		header("location: dashboard/dash.php");
+		header("location: dash.php");
 	}else{
 		header("location: index.php");
 	}
