@@ -4,7 +4,7 @@
 		header("location:index.php");
 	}
 	
-	echo "Welcome " . $_SESSION['currentUserDetails']["username"];
+	echo "Log in as a " . $_SESSION['currentUserDetails']["username"];
 ?>
 <!doctype html>
 <html>
@@ -94,24 +94,71 @@
   	        </div>
 	  	    <div id="collapseTwo1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1" data-parent="#accordion1">
 	  	      <div class="card-body">
-						<?php 
+					<?php 
 				  
-				  $conn = mysqli_connect("localhost","root","","db_matrix");
+				  $conn = mysqli_connect("localhost","root","","gixez");
 
-				  $q = "SELECT * FROM tbl_user";
+				  $q = "SELECT * FROM pakage_req";
 
 				  $result = mysqli_query($conn,$q);
 
 				  echo "<table border='1'>";
-				  	echo "<tr>"."<td>"."ID"."</td>"."<td>"."ID"."</td>"."<td>"."ID"."</td>"."</tr>"; // add heding for table 
+						echo "<tr>".
+											"<td>"."<strong>"."Frist Name"."</strong>"."</td>".
+											"<td>"."<strong>"."Last Name"."</strong>"."</td>".
+											"<td>"."<strong>"."Company Name"."</strong>"."</td>".
+											"<td>"."<strong>"."Email"."</strong>"."</td>".
+											"<td>"."<strong>"."Contact Office"."</strong>"."</td>".
+											"<td>"."<strong>"."Contact Mobile"."</strong>"."</td>".
+											"<td>"."<strong>"."Company Address"."</strong>"."</td>".
+										"</tr>"; // add heding for table 
 				  while($row=mysqli_fetch_assoc($result)){
-					$id=$row["id"];
+					$id=$row["fname"];
 					echo "<tr>";
-					echo "<td>".$row["id"]."</td>";
-					echo "<td>".$row["username"]."</td>";
-					echo "<td><a href='editForm.php?id=$id'>edit </a></td>";
-					echo "<td><a href=''>delete </a></td>";
-					echo "<td><a href=''>view </a></td>";
+					echo "<td>".$row["fname"]."</td>";
+					echo "<td>".$row["lname"]."</td>";
+					echo "<td>".$row["cname"]."</td>";
+					echo "<td>".$row["mail"]."</td>";
+					echo "<td>".$row["cnuberoff"]."</td>";
+					echo "<td>".$row["cnummo"]."</td>";
+					echo "<td>".$row["caddress"]."</td>";
+					//echo "<td><a href='editForm.php?id=$id'>edit </a></td>";
+					//echo "<td><a href=''>delete </a></td>";
+					//echo "<td><a href=''>view </a></td>";
+					echo "</tr>";
+				  	}
+				  	echo "</table>";
+				  	
+				?>	
+						</div>
+  	        </div>
+  	      </div>
+	  	 <div class="card">
+	  	    <div class="card-header" role="tab" id="headingTwo1">
+	  	      <h5 class="mb-0"> <a class="collapsed" data-toggle="collapse" href="#collapseThree1" role="button" aria-expanded="false" aria-controls="collapseTwo1">Customer Mail Subscibers</a> </h5>
+  	        </div>
+	  	    <div id="collapseThree1" class="collapse" role="tabpanel" aria-labelledby="headingTwo1" data-parent="#accordion1">
+	  	      <div class="card-body">
+						<?php 
+				  
+				  $conn = mysqli_connect("localhost","root","","gixez");
+
+				  $q = "SELECT * FROM cussubmail";
+
+				  $result = mysqli_query($conn,$q);
+
+				  echo "<table border='1'>";
+				  	echo "<tr>".
+							"<td>"."<strong>"."Subciber Emails"."</strong>"."</td>".
+						"</tr>"; // add heding for table 
+				  while($row=mysqli_fetch_assoc($result)){
+					$id=$row["submail"];
+					echo "<tr>";
+					echo "<td>".$row["submail"]."</td>";
+					//echo "<td>".$row["username"]."</td>";
+					//echo "<td><a href='editForm.php?id=$id'>edit </a></td>";
+					//echo "<td><a href=''>delete </a></td>";
+					//echo "<td><a href=''>view </a></td>";
 					echo "</tr>";
 				  	}
 				  	echo "</table>";
@@ -120,7 +167,6 @@
 						</div>
   	        </div>
   	      </div>
-	  	 
   	    </div>
       </div>
 	  <div class="col-xl-2">
@@ -129,7 +175,12 @@
 	  </div>
   </div>
 </div>
-<a href="logout.php">Logout </a>
+	<br>
+	<div class="container">
+<a href="logout.php">
+	<button type="button" class="btn btn-primary">Log Out</button> 
+</a>
+</div>	
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap-4.0.0.js"></script>
 </body>

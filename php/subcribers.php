@@ -1,8 +1,8 @@
 <?php
     $subsemail = $_POST["email"];
     
-	$link = mysqli_connect("localhost","root","","subdetails");
-	$query = "INSERT INTO substbl(email) VALUES('$subsemail')";
+	$link = mysqli_connect("localhost","root","","gixez");
+	$query = "INSERT INTO cussubmail(submail) VALUES('$subsemail')";
 	$run = mysqli_query($link,$query);
 	//var_dump($run);
 	if($run){
